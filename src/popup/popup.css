@@ -11,8 +11,8 @@
   --low: #77d986;
   --accent: #9dfc7d;
   --accent-deep: #5ac06f;
-  --font-display: "Bodoni 72 Smallcaps", "Didot", "Iowan Old Style", serif;
-  --font-body: "Avenir Next", "Futura", "Gill Sans", sans-serif;
+  --font-display: "JetBrains Mono", "Cascadia Code", "Fira Code", "IBM Plex Mono", "SF Mono", "Menlo", "Consolas", "Liberation Mono", monospace;
+  --font-body: "JetBrains Mono", "Cascadia Code", "Fira Code", "IBM Plex Mono", "SF Mono", "Menlo", "Consolas", "Liberation Mono", monospace;
 }
 
 * {
@@ -24,6 +24,9 @@ body {
   min-width: 420px;
   min-height: 560px;
   font-family: var(--font-body);
+  font-variant-ligatures: none;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "liga" 0, "calt" 0;
   color: var(--ink-primary);
   background:
     radial-gradient(circle at 20% 10%, rgba(157, 252, 125, 0.23), transparent 42%),
